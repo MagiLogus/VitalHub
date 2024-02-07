@@ -1,8 +1,10 @@
+import { Button, ButtonGoogle } from "../../components/Button/Style";
 import { Container } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
-import { LinkMedium } from "../../components/Links/Style";
-import { Logo } from "../../components/Logo/Style";
-import { Title } from "../../components/Title/Title";
+import { LinkBold, LinkMedium } from "../../components/Links/Style";
+import { Logo, LogoGoogle } from "../../components/Logo/Style";
+import { ButtonTitle, ButtonTitleGoogle, Title } from "../../components/Title/Title";
+import { ContentAccount, TextAccount } from "./Style";
 
 
 export const Login = () => {
@@ -19,17 +21,18 @@ export const Login = () => {
 
             <LinkMedium>Esqueceu sua senha?</LinkMedium>
 
-            {/*     <Button>
-                <ButtonTitle></ButtonTitle>
+            <Button>
+                <ButtonTitle>Entrar</ButtonTitle>
             </Button>
 
             <ButtonGoogle>
-                <ButtonTitleGoogle></ButtonTitleGoogle>
+                <LogoGoogle source={require("../../assets/images/logo_google.png")} />
+                <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
 
             <ContentAccount>
-                <TextAccount></TextAccount>
-            </ContentAccount>  */}
+                <TextAccount>Não tem conta? <LinkBold>Crie uma conta agora!</LinkBold></TextAccount>
+            </ContentAccount>
 
         </Container>
     );

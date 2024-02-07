@@ -4,7 +4,7 @@ export const Input = styled.TextInput.attrs({ placeholderTextColor: '#34898F' })
 width: 90%;
 height: 53px;
 padding: 16px;
-margin-top: 15px;
+margin-top: 20px;
 border: 2px solid #49B3BA;
 border-radius: 5px;
 color: #49B3BF;

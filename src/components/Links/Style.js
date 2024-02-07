@@ -9,3 +9,10 @@ align-self: flex-start;
 margin-left: 20px;
 text-decoration: underline;
 `
+
+export const LinkBold = styled.Text`
+font-size: 16px;
+color: #4D659D;
+font-family: "MontserratAlternates_600SemiBold";
+text-decoration: underline;
+`
