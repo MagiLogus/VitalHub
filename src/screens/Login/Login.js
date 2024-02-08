@@ -1,8 +1,9 @@
 import { Button, ButtonGoogle } from "../../components/Button/Style";
 import { Container } from "../../components/Container/Style";
+import { GoogleIcon } from "../../components/Icons/Icons";
 import { Input } from "../../components/Input/Style";
 import { LinkBold, LinkMedium } from "../../components/Links/Style";
-import { Logo, LogoGoogle } from "../../components/Logo/Style";
+import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, ButtonTitleGoogle, Title } from "../../components/Title/Title";
 import { ContentAccount, TextAccount } from "./Style";
 
@@ -13,7 +14,7 @@ export const Login = () => {
 
             <Logo source={require("../../assets/images/logo_screens.png")} />
 
-            <Title>Entrar ou criar conta</Title>
+            <Title>Entrar ou Criar Conta</Title>
 
             <Input placeholder="Usuário ou E-mail" />
 
@@ -26,7 +27,7 @@ export const Login = () => {
             </Button>
 
             <ButtonGoogle>
-                <LogoGoogle source={require("../../assets/images/logo_google.png")} />
+                <GoogleIcon source={require("../../assets/images/google_icon.png")} />
                 <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
 

@@ -6,7 +6,3 @@ height: 120px;
 align-self: center;
 margin: 20px 0px;
 `
-export const LogoGoogle = styled.Image`
-width: 20px;
-height: 20px;
-`

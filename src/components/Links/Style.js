@@ -16,3 +16,8 @@ color: #4D659D;
 font-family: "MontserratAlternates_600SemiBold";
 text-decoration: underline;
 `
+
+export const LinkAction = styled(LinkBold)`
+color: #344F8F;
+margin-top: 30px;
+`

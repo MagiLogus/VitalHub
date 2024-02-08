@@ -25,3 +25,7 @@ color: #5F5C6B;
 font-family: "Quicksand_500Medium";
 text-align: center;
 `
+
+export const SubtitleFocus = styled.Text`
+color: #496BBA;
+`

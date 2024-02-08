@@ -1,28 +1,33 @@
 import { Button } from "../../components/Button/Style";
 import { Container, ContentSubtitle } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
+import { LinkAction } from "../../components/Links/Style";
 import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, Subtitle, Title } from "../../components/Title/Title";
 
-export const PasswordReset = () => {
+export const CreateAccount = () => {
     return (
         <Container>
 
             <Logo source={require("../../assets/images/logo_screens.png")} />
 
-            <Title>Redefinir Senha</Title>
+            <Title>Criar Conta</Title>
 
             <ContentSubtitle>
-                <Subtitle>Insira e confirme a sua nova senha</Subtitle>
+                <Subtitle>Insira seu endereço de e-mail e senha para realizar seu cadastro</Subtitle>
             </ContentSubtitle>
 
-            <Input placeholder="Nova Senha" />
+            <Input placeholder="Usuário ou E-mail" />
 
-            <Input placeholder="Confirmar Nova Senha" />
+            <Input placeholder="Senha" />
+
+            <Input placeholder="Confirmar Senha" />
 
             <Button>
-                <ButtonTitle>Confirmar Nova Senha</ButtonTitle>
+                <ButtonTitle>Cadastrar</ButtonTitle>
             </Button>
+
+            <LinkAction>Cancelar</LinkAction>
 
         </Container>
     );
