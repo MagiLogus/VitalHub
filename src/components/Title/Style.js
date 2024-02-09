@@ -4,6 +4,8 @@ export const Title = styled.Text`
 font-size: 20px;
 color: #33303E;
 font-family: "MontserratAlternates_600SemiBold";
+margin-top: 20px;
+text-align: center;
 margin-bottom: 5px;
 `
 
@@ -28,4 +30,19 @@ text-align: center;
 
 export const SubtitleFocus = styled.Text`
 color: #496BBA;
+`
+
+export const EmailTitle = styled(Subtitle)`
+color: #4E4B59;
+margin-top: 10px;
+`
+export const TextBoxTitle = styled.Text`
+font-size: 16px;
+color: #33303E;
+font-family: "Quicksand_600SemiBold";
+`
+export const TextBoxText = styled.Text`
+font-size: 16px;
+color: #33303E;
+font-family: "MontserratAlternates_500Medium";
 `

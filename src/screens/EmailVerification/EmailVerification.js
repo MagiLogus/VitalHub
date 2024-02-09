@@ -3,7 +3,7 @@ import { Container, ContentSubtitle, InputContainer } from "../../components/Con
 import { VerificationInput } from "../../components/Input/Style";
 import { LinkAction } from "../../components/Links/Style";
 import { Logo } from "../../components/Logo/Style";
-import { ButtonTitle, Subtitle, SubtitleFocus, Title } from "../../components/Title/Title";
+import { ButtonTitle, Subtitle, SubtitleFocus, Title } from "../../components/Title/Style";
 
 
 export const EmailVerification = () => {

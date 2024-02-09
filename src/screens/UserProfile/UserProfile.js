@@ -1,10 +1,10 @@
 
-import { StatusBar } from "react-native";
-import { Button } from "../../components/Button/Style";
-import { Container, ContentSubtitle, ImageContainer } from "../../components/Container/Style";
+import { ScrollView, StatusBar, View } from "react-native";
+import { Button, ButtonLogoff } from "../../components/Button/Style";
+import { Container, ContentSubtitle, ImageContainer, TextBoxArea, TextBoxContainer, TextBoxContainerRow } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
 import { Logo } from "../../components/Logo/Style";
-import { ButtonTitle, Subtitle, Title } from "../../components/Title/Title";
+import { ButtonTitle, EmailTitle, Subtitle, TextBoxText, TextBoxTitle, Title } from "../../components/Title/Style";
 
 export const UserProfile = () => {
     return (
@@ -14,19 +14,71 @@ export const UserProfile = () => {
 
             <ImageContainer source={require("../../assets/images/user_profile.png")} />
 
-            <Logo source={require("../../assets/images/logo_screens.png")} />
+            <View style={{
+                flex: 1,
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: "90%",
+            }}>
+                <ScrollView style={{ width: "100%" }} showsVerticalScrollIndicator={false} overScrollMode="never">
 
-            <Title>Recuperar Senha</Title>
 
-            <ContentSubtitle>
-                <Subtitle>Digite abaixo seu email cadastrado que enviaremos um link para recuperação de senha</Subtitle>
-            </ContentSubtitle>
 
-            <Input placeholder="Usuário ou E-mail" />
+                    <Title>Richard Kosta</Title>
 
-            <Button>
-                <ButtonTitle>Continuar</ButtonTitle>
-            </Button>
+                    <EmailTitle>richard.kosta@gmail.com</EmailTitle>
+
+                    <TextBoxContainer>
+                        <TextBoxTitle>Data de Nascimento:</TextBoxTitle>
+                        <TextBoxArea>
+                            <TextBoxText>04/05/1999</TextBoxText>
+                        </TextBoxArea>
+                    </TextBoxContainer>
+
+                    <TextBoxContainer>
+                        <TextBoxTitle>CPF:</TextBoxTitle>
+                        <TextBoxArea>
+                            <TextBoxText>859********</TextBoxText>
+                        </TextBoxArea>
+                    </TextBoxContainer>
+
+                    <TextBoxContainer>
+                        <TextBoxTitle>Endereço:</TextBoxTitle>
+                        <TextBoxArea>
+                            <TextBoxText>Rua: Vicenso Silva, 987</TextBoxText>
+                        </TextBoxArea>
+                    </TextBoxContainer>
+
+                    <TextBoxContainerRow>
+                        <TextBoxContainer fieldWidth={45}>
+                            <TextBoxTitle>Cep:</TextBoxTitle>
+                            <TextBoxArea >
+                                <TextBoxText>06548-909</TextBoxText>
+                            </TextBoxArea>
+                        </TextBoxContainer>
+
+                        <TextBoxContainer fieldWidth={45}>
+                            <TextBoxTitle>Cidade:</TextBoxTitle>
+                            <TextBoxArea >
+                                <TextBoxText>Moema-SP</TextBoxText>
+                            </TextBoxArea>
+                        </TextBoxContainer>
+                    </TextBoxContainerRow>
+
+                    <Button>
+                        <ButtonTitle>Salvar</ButtonTitle>
+                    </Button>
+
+                    <Button>
+                        <ButtonTitle>Editar</ButtonTitle>
+                    </Button>
+
+                    <ButtonLogoff>
+                        <ButtonTitle>Sair do APP</ButtonTitle>
+                    </ButtonLogoff>
+
+                </ScrollView>
+            </View>
 
         </Container>
     );

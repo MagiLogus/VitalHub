@@ -2,7 +2,7 @@ import { Button } from "../../components/Button/Style";
 import { Container, ContentSubtitle } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
 import { Logo } from "../../components/Logo/Style";
-import { ButtonTitle, Subtitle, Title } from "../../components/Title/Title";
+import { ButtonTitle, Subtitle, Title } from "../../components/Title/Style";
 
 export const PasswordRecover = () => {
     return (

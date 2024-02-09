@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Button = styled.TouchableOpacity`
-width: 90%;
 height: 44px;
 background-color: #496BBA;
 border-radius: 5px;
@@ -18,4 +17,10 @@ gap: 10px;
 margin-top: 15px;
 margin-bottom: 15px;
 flex-direction: row;
+`
+export const ButtonLogoff = styled(Button)`
+background-color: #ACABB7;
+width: 60%;
+align-self: center;
+border: 1px solid #ACABB7;
 `
