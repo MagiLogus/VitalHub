@@ -9,6 +9,7 @@ import { PasswordReset } from './src/screens/PasswordReset/PasswordReset';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
 import { EmailVerification } from './src/screens/EmailVerification/EmailVerification';
 import { UserProfile } from './src/screens/UserProfile/UserProfile';
+import { DoctorsAppointments } from './src/screens/DoctorsAppointments/DoctorAppointments';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,12 +31,13 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator >
         <Stack.Screen name='Navegacao' component={Navegation} options={{ title: 'Navegação' }} />
-        <Stack.Screen name='Login' component={Login} options={{ title: 'Login' }} />
-        <Stack.Screen name='PasswordRecover' component={PasswordRecover} options={{ title: 'Recuperar Senha' }} />
-        <Stack.Screen name='PasswordReset' component={PasswordReset} options={{ title: 'Redefinir Senha' }} />
-        <Stack.Screen name='CreateAccount' component={CreateAccount} options={{ title: 'Criar Conta' }} />
-        <Stack.Screen name='EmailVerification' component={EmailVerification} options={{ title: 'Verificar E-mail' }} />
+        <Stack.Screen name='Login' component={Login} options={{ title: 'Login', headerShown: false }} />
+        <Stack.Screen name='PasswordRecover' component={PasswordRecover} options={{ title: 'Recuperar Senha', headerShown: false }} />
+        <Stack.Screen name='PasswordReset' component={PasswordReset} options={{ title: 'Redefinir Senha', headerShown: false }} />
+        <Stack.Screen name='CreateAccount' component={CreateAccount} options={{ title: 'Criar Conta', headerShown: false }} />
+        <Stack.Screen name='EmailVerification' component={EmailVerification} options={{ title: 'Verificar E-mail', headerShown: false }} />
         <Stack.Screen name='UserProfile' component={UserProfile} options={{ title: 'Perfil', headerShown: false }} />
+        <Stack.Screen name='DoctorsAppointments' component={DoctorsAppointments} options={{ title: 'Médico - Consultas', headerShown: false }} />
       </Stack.Navigator>
 
 

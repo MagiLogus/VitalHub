@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { Button, ButtonGoogle } from "../../components/Button/Style";
 import { Container } from "../../components/Container/Style";
 import { GoogleIcon } from "../../components/Icons/Style";
@@ -11,30 +12,22 @@ import { ContentAccount, TextAccount } from "./Style";
 export const Login = () => {
     return (
         <Container>
-
-            <Logo source={require("../../assets/images/logo_screens.png")} />
-
+            <StatusBar translucent backgroundColor="transparent" />
+            <Logo />
             <Title>Entrar ou Criar Conta</Title>
-
             <Input placeholder="Usuário ou E-mail" />
-
             <Input placeholder="Senha" secureTextEntry />
-
             <LinkMedium>Esqueceu sua senha?</LinkMedium>
-
-            <Button>
+            <Button width="90%">
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
-
-            <ButtonGoogle>
+            <ButtonGoogle width="90%">
                 <GoogleIcon source={require("../../assets/images/google_icon.png")} />
                 <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
-
             <ContentAccount>
                 <TextAccount>Não tem conta? <LinkBold>Crie uma conta agora!</LinkBold></TextAccount>
             </ContentAccount>
-
         </Container>
     );
 };

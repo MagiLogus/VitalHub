@@ -4,9 +4,8 @@ export const Title = styled.Text`
 font-size: 20px;
 color: #33303E;
 font-family: "MontserratAlternates_600SemiBold";
-margin-top: 20px;
+margin-top: 25px;
 text-align: center;
-margin-bottom: 5px;
 `
 
 export const ButtonTitle = styled.Text`
@@ -45,4 +44,10 @@ export const TextBoxText = styled.Text`
 font-size: 16px;
 color: #33303E;
 font-family: "MontserratAlternates_500Medium";
+`
+export const TitleTopBar = styled(Title)`
+font-size: 16px;
+color: #FBFBFB;
+margin-top: 3px;
+text-align: center;
 `

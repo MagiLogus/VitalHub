@@ -6,7 +6,7 @@ color: #8C8A97;
 font-family: "MontserratAlternates_500Medium";
 margin-top: 10px;
 align-self: flex-start;
-margin-left: 20px;
+margin-left: 5%;
 text-decoration: underline;
 `
 

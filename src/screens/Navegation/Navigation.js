@@ -8,7 +8,8 @@ export const Navegation = ({ navigation }) => {
             <Button title="Redefinir Senha" onPress={() => navigation.navigate("PasswordReset")} />
             <Button title="Criar Conta" onPress={() => navigation.navigate("CreateAccount")} />
             <Button title="Verificar E-mail" onPress={() => navigation.navigate("EmailVerification")} />
-            <Button title="Perfil"  onPress={() => navigation.navigate("UserProfile")} />
+            <Button title="Perfil" onPress={() => navigation.navigate("UserProfile")} />
+            <Button title="Médico - Consultas" onPress={() => navigation.navigate("DoctorsAppointments")} />
         </View>
     );
 }

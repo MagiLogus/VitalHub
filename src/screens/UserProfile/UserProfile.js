@@ -9,7 +9,6 @@ import { ButtonTitle, EmailTitle, Subtitle, TextBoxText, TextBoxTitle, Title } f
 export const UserProfile = () => {
     return (
         <Container>
-
             <StatusBar translucent backgroundColor="transparent" />
 
             <ImageContainer source={require("../../assets/images/user_profile.png")} />
