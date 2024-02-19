@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { Button } from "../../components/Button/Style";
 import { Container, ContentSubtitle } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
@@ -7,21 +8,16 @@ import { ButtonTitle, Subtitle, Title } from "../../components/Title/Style";
 export const PasswordRecover = () => {
     return (
         <Container>
-
-            <Logo source={require("../../assets/images/logo_screens.png")} />
-
+            <StatusBar translucent backgroundColor="transparent" />
+            <Logo />
             <Title>Recuperar Senha</Title>
-
             <ContentSubtitle>
                 <Subtitle>Digite abaixo seu email cadastrado que enviaremos um link para recuperação de senha</Subtitle>
             </ContentSubtitle>
-
             <Input placeholder="Usuário ou E-mail" />
-
-            <Button>
+            <Button width={"90%"}>
                 <ButtonTitle>Continuar</ButtonTitle>
             </Button>
-
         </Container>
     );
 };

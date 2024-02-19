@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { Button } from "../../components/Button/Style";
 import { Container, ContentSubtitle } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
@@ -7,23 +8,17 @@ import { ButtonTitle, Subtitle, Title } from "../../components/Title/Style";
 export const PasswordReset = () => {
     return (
         <Container>
-
-            <Logo source={require("../../assets/images/logo_screens.png")} />
-
+            <StatusBar translucent backgroundColor="transparent" />
+            <Logo />
             <Title>Redefinir Senha</Title>
-
             <ContentSubtitle>
                 <Subtitle>Insira e confirme a sua nova senha</Subtitle>
             </ContentSubtitle>
-
             <Input placeholder="Nova Senha" />
-
             <Input placeholder="Confirmar Nova Senha" />
-
-            <Button>
+            <Button width={"90%"}>
                 <ButtonTitle>Confirmar Nova Senha</ButtonTitle>
             </Button>
-
         </Container>
     );
 };

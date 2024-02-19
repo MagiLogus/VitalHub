@@ -8,7 +8,6 @@ import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, ButtonTitleGoogle, Title } from "../../components/Title/Style";
 import { ContentAccount, TextAccount } from "./Style";
 
-
 export const Login = () => {
     return (
         <Container>
@@ -22,7 +21,7 @@ export const Login = () => {
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
             <ButtonGoogle width="90%">
-                <GoogleIcon source={require("../../assets/images/google_icon.png")} />
+                <GoogleIcon />
                 <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
             <ContentAccount>
