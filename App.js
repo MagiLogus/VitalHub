@@ -23,10 +23,6 @@ export default function App() {
   }
 
   return (
-    //Navegação
-    //Container
-    //stacknavigator 
-    //stackscreen
     <NavigationContainer>
       <Stack.Navigator >
         <Stack.Screen name='Navegacao' component={Navegation} options={{ title: 'Navegação' }} />
@@ -38,11 +34,7 @@ export default function App() {
         <Stack.Screen name='UserProfile' component={UserProfile} options={{ title: 'Perfil', headerShown: false }} />
         <Stack.Screen name='DoctorsAppointments' component={DoctorsAppointments} options={{ title: 'Médico - Consultas', headerShown: false }} />
         <Stack.Screen name='ConfirmMedicalRecord' component={ConfirmMedicalRecord} options={{ title: 'Medico - Inserçáo Prontuário', headerShown: false }} />
-
-
       </Stack.Navigator>
-
-
     </NavigationContainer>
   );
 }
