@@ -10,10 +10,9 @@ import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
 import { EmailVerification } from './src/screens/EmailVerification/EmailVerification';
 import { UserProfile } from './src/screens/UserProfile/UserProfile';
 import { DoctorsAppointments } from './src/screens/DoctorsAppointments/DoctorAppointments';
+import { ConfirmMedicalRecord } from './src/screens/ConfirmMedicalRecord/ConfirmMedicalRecord';
 
 const Stack = createNativeStackNavigator();
-
-
 
 export default function App() {
 
@@ -38,6 +37,9 @@ export default function App() {
         <Stack.Screen name='EmailVerification' component={EmailVerification} options={{ title: 'Verificar E-mail', headerShown: false }} />
         <Stack.Screen name='UserProfile' component={UserProfile} options={{ title: 'Perfil', headerShown: false }} />
         <Stack.Screen name='DoctorsAppointments' component={DoctorsAppointments} options={{ title: 'Médico - Consultas', headerShown: false }} />
+        <Stack.Screen name='ConfirmMedicalRecord' component={ConfirmMedicalRecord} options={{ title: 'Medico - Inserçáo Prontuário', headerShown: false }} />
+
+
       </Stack.Navigator>
 
 

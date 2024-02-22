@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { Button } from "../../components/Button/Style";
 import { Container, ContentSubtitle } from "../../components/Container/Style";
 import { Input } from "../../components/Input/Style";
@@ -17,7 +18,7 @@ export const CreateAccount = () => {
             <Input placeholder="Usuário ou E-mail" />
             <Input placeholder="Senha" />
             <Input placeholder="Confirmar Senha" />
-            <Button>
+            <Button width={"90%"}>
                 <ButtonTitle>Cadastrar</ButtonTitle>
             </Button>
             <LinkAction>Cancelar</LinkAction>

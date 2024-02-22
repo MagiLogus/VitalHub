@@ -35,19 +35,27 @@ export const EmailTitle = styled(Subtitle)`
 color: #4E4B59;
 margin-top: 10px;
 `
+
 export const TextBoxTitle = styled.Text`
 font-size: 16px;
 color: #33303E;
 font-family: "Quicksand_600SemiBold";
 `
+
 export const TextBoxText = styled.Text`
 font-size: 16px;
 color: #33303E;
 font-family: "MontserratAlternates_500Medium";
 `
+
 export const TitleTopBar = styled(Title)`
 font-size: 16px;
 color: #FBFBFB;
 margin-top: 3px;
 text-align: center;
+`
+
+export const AgeTitle = styled(Subtitle)`
+color: #4E4B59;
+margin-top: 10px;
 `

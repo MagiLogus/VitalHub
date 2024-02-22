@@ -1,22 +1,10 @@
 import { StatusBar } from "react-native";
-import { CalendarContainer, Container, FilterAppointment, ImageTopBar, TopBar, TopBarContainer, TopBarImageContainer, TopBarTitleContainer } from "../../components/Container/Style";
+import { Container, FilterAppointment, ImageTopBar, TopBar, TopBarContainer, TopBarImageContainer, TopBarTitleContainer } from "../../components/Container/Style";
 import { AlertIcon } from "../../components/Icons/Style";
 import { Subtitle, TitleTopBar } from "../../components/Title/Style";
 import { CalendarList } from "../../components/Calendar/Calendar";
 import { AbsListAppointment } from "../../components/AbsListAppointment/AbsListAppointment";
 import { useState } from "react";
-
-
-
-
-
-
-
-
-
-
-
-
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -25,12 +13,8 @@ const Consultas = [
     { id: 1, nome: "Carlos", situacao: "cancelado" }
 ]
 
-
-
-
-
 export const DoctorsAppointments = () => {
-    const [statusList, setStatusList] = useState("realizado")
+    const [statusList, setStatusList] = useState("pendente")
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -40,10 +24,10 @@ export const DoctorsAppointments = () => {
                         <ImageTopBar source={require("../../assets/images/user_profile.png")} />
                         <TopBarImageContainer>
                             <Subtitle>Bem Vindo</Subtitle>
-                            <TitleTopBar>Dr. Claudio</TitleTopBar>
+                            <TitleTopBar>Dr(a). Claudio</TitleTopBar>
                         </TopBarImageContainer>
                     </TopBarTitleContainer>
-                    <AlertIcon source={require("../../assets/images/alert_icon.png")} />
+                    <AlertIcon />
                 </TopBarContainer>
             </TopBar>
             <CalendarList />

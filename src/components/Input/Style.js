@@ -11,6 +11,7 @@ color: #49B3BF;
 font-size: 16px;
 font-family: "MontserratAlternates_600SemiBold";
 `
+
 export const VerificationInput = styled.TextInput.attrs({ placeholderTextColor: '#34898F' })`
 width: 18%;
 height: 62px;

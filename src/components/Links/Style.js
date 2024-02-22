@@ -20,4 +20,5 @@ text-decoration: underline;
 export const LinkAction = styled(LinkBold)`
 color: #344F8F;
 margin-top: 30px;
+align-self: center;
 `

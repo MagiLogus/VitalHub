@@ -33,9 +33,7 @@ import { useFonts, MontserratAlternates_600SemiBold } from '@expo-google-fonts/m
   });
   
   const currentDate = new Date();
-
   const startingDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
-
   const endingDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
 
   return (

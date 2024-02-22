@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import Google from "../../assets/images/google.svg";
+import Google from "../../assets/images/google_icon.svg";
+import Alert from "../../assets/images/alert_icon.svg";
 
 export const GoogleIcon = styled(Google)`
-width: 20px;
+width: 16px;
 height: 20px;
-color: red;
 `
-export const AlertIcon = styled.Image`
+
+export const AlertIcon = styled(Alert)`
 width: 25px;
 height: 25px;
 `
