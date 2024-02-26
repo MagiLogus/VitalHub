@@ -7,6 +7,7 @@ justify-content: center;
 flex-direction: row;
 margin-top: 30px;
 `
+
 export const TextAccount = styled.Text`
 font-size: 16px;
 font-family: "MontserratAlternates_600SemiBold";
