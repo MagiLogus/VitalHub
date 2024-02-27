@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components/native';
 
 export const Title = styled.Text`
 font-size: 20px;
@@ -58,4 +58,14 @@ text-align: center;
 export const AgeTitle = styled(Subtitle)`
 color: #4E4B59;
 margin-top: 10px;
+`
+
+export const ModalText = styled.Text`
+    width: 270px ;
+    font-size: 16px ;
+    color: #5f5c6b ;
+    line-height: 22px ;
+    text-align: center ;
+    margin-top: 10px ;
+    font-family: "Quicksand_500Medium";
 `

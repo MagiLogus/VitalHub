@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components/native';
 import VitalHub from "../../assets/images/vitalhub_logo.svg";
 
 export const Logo = styled(VitalHub)`

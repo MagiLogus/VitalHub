@@ -1,7 +1,7 @@
 import { Modal } from "react-native";
 import { Title } from "../Title/Style";
 import { Button, ButtonSecondary, ButtonSecondaryTitle, ButtonTitle } from "../Button/Style";
-import { ModalContent, ModalText, PatientModal } from "./style";
+import { ModalContent, ModalText, PatientModal } from "./Style";
 
 export const CancellationModal = ({ visible, setShowModalCancel, ...rest }) => {
   return (

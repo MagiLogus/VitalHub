@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components/native';
+
 
 export const ButtonTabsStyle = styled.TouchableHighlight`
 padding: 12px 14px;

@@ -57,9 +57,7 @@ export const AppointmentCard = ({
                         <ButtonText situacao={situacao}>Ver Prontuário</ButtonText>
                     </ButtonCard>
                 )
-            }
-
-          
+            } 
         </ViewRow>
       </ContentCard>
     </ContainerCardsList>

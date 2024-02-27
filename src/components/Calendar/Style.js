@@ -1,4 +1,4 @@
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
 import CalendarStrip from "react-native-calendar-strip";
 
 export const StyledCalendarStrip = styled(CalendarStrip)`

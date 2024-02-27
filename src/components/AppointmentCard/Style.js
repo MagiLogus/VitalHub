@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components/native';
 import { Title } from "../Title/Style";
 
 export const ContainerCardsList = styled.View`

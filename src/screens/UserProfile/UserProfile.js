@@ -1,4 +1,3 @@
-
 import { ScrollView, StatusBar } from "react-native";
 import { Button, ButtonLogoff } from "../../components/Button/Style";
 import { Container, ImageContainer, ScrollViewContainer, TextBoxArea, TextBoxContainer, TextBoxContainerRow } from "../../components/Container/Style";
