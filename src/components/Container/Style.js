@@ -41,6 +41,11 @@ border-radius: 5px;
 padding: 16px 16px;
 `
 
+export const TextBoxAreaImage = styled(TextBoxArea)`
+justify-content: center;
+align-items: center;
+`
+
 export const TextBoxContainerRow = styled(TextBoxContainer)`
 flex-direction: row;
 justify-content: space-between;
@@ -113,4 +118,22 @@ export const ModalContent = styled.View`
     border-radius: 10px ;
     background-color: #fff ;
     align-items:center ;
+`
+
+export const BoxAreaImage = styled.View`
+ align-items: center;
+ justify-content: center;
+ gap: 5px;
+ flex-direction: row;
+ margin-top: 28px ;
+ margin-bottom: 28px;
+`
+
+export const ButtonContainer = styled.View`
+width: 90%;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+gap: 60px;
+
 `

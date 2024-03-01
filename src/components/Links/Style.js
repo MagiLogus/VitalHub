@@ -22,3 +22,9 @@ color: #344F8F;
 margin-top: 30px;
 align-self: center;
 `
+export const LinkActionRed = styled(LinkBold)`
+color: #C81D25;
+text-decoration: none;
+margin-top: 20px;
+margin-right: 32px;
+`

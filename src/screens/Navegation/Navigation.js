@@ -12,6 +12,8 @@ export const Navegation = ({ navigation }) => {
             <Button title="Médico - Consultas" onPress={() => navigation.navigate("DoctorsAppointments")} />
             <Button title="Medico - Inserção Prontuário" onPress={() => navigation.navigate("ConfirmMedicalRecord")} />
             <Button title="Paciente - Consultas" onPress={() => navigation.navigate("PacientAppointments")} />
+            <Button title="Medico - Visualiar Prescrição" onPress={() => navigation.navigate("ViewPrescription")} />
+            <Button title="Medico - Local da Consulta" onPress={() => navigation.navigate("ConsultationLocal")} />
         </View>
     );
 }

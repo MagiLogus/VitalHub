@@ -73,3 +73,10 @@ export const AppointmentButton = styled.TouchableOpacity`
   justify-content: center;
   elevation: 5; 
 `;
+
+export const ButtonImage = styled(Button)`
+background-color: #49B3BA;
+border: 1px solid #49B3BA;
+flex-direction: row;
+gap: 10px;
+`
