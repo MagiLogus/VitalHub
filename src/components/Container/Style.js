@@ -28,6 +28,15 @@ height: 40%;
 background-size: cover;
 `
 
+export const ImageDoctor = styled.Image`
+width: 77px;
+height: 80px;
+border-radius: 5px;
+background-image: cover;
+margin-left: 10px;
+
+`
+
 export const TextBoxContainer = styled.View`
 margin-top: 24px;
 width: ${props => props.fieldWidth ? `${props.fieldWidth}%` : '100%'};
@@ -103,7 +112,7 @@ export const ScrollViewContainer = styled.View`
 flex: 1;
 justify-content: center;
 align-items: center;
-width: 90%;
+width: ${(props) => props.width || '90%'};
 `
 export const PatientModal = styled.View`
     flex: 1;
@@ -155,4 +164,32 @@ export const MapInformationContainer = styled.View`
 width: 90%;
 justify-content: center;
 align-items: center;
+`
+
+export const CardContainer = styled.View`
+width: 100%;
+justify-content: center;
+align-items: center;
+gap: 12px;
+margin-top: 35px;
+padding: 10px;
+`
+
+export const DoctorCard = styled.View`
+width: 100%;
+height: 102px;
+border-radius: 5px;
+background: #FFF;
+elevation: 4;
+shadow-color: #000;
+shadow-offset: 4px 4px;
+shadow-opacity: 0.15;
+shadow-radius: 15px;
+flex-direction: row;
+align-items: center;
+`
+
+export const TextContainer = styled.View`
+height: 100%;
+margin-left: 10px;
 `

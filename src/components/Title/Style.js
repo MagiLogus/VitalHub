@@ -7,6 +7,12 @@ font-family: "MontserratAlternates_600SemiBold";
 margin-top: 25px;
 text-align: center;
 `
+export const TitleDoctor = styled.Text`
+margin-top: 27px;
+font-size: 16px;
+color: #33303E;
+font-family: "MontserratAlternates_600SemiBold";
+`
 
 export const ButtonTitle = styled.Text`
 font-size: 16px;
@@ -33,6 +39,12 @@ color: #496BBA;
 
 export const EmailTitle = styled(Subtitle)`
 color: #4E4B59;
+margin-top: 10px;
+`
+export const DoctorSubtitle = styled.Text`
+color: #8C8A97;
+font-family: 'Quicksand_500Medium';
+font-size: 14px;
 margin-top: 10px;
 `
 
@@ -68,4 +80,8 @@ export const ModalText = styled.Text`
     text-align: center ;
     margin-top: 10px ;
     font-family: "Quicksand_500Medium";
+`
+
+export const TitleScreen = styled(Title)`
+  margin-top: 72px;
 `
