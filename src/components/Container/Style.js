@@ -135,5 +135,24 @@ align-items: center;
 justify-content: space-between;
 flex-direction: row;
 gap: 60px;
+`
 
+
+export const MapInformation = styled.View`
+flex: 1;
+width: 100%;
+border-radius: 10px 10px 0px 0px;
+background: #fff;
+elevation: 4; 
+shadow-color: rgba(0, 0, 0, 0.1);
+shadow-offset: 0px -4px;
+shadow-opacity: 1;
+shadow-radius: 15px;
+margin-top: -25px;
+align-items: center;
+`
+export const MapInformationContainer = styled.View`
+width: 90%;
+justify-content: center;
+align-items: center;
 `
