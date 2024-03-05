@@ -15,6 +15,7 @@ import { PacientAppointments } from './src/screens/PacientAppointments/PacientAp
 import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescription';
 import { ConsultationLocal } from './src/screens/ConsultationLocal/ConsultationLocal';
 import { SelectDoctor } from './src/screens/SelectDoctor/SelectDoctor';
+import { SelectClinic } from './src/screens/SelectClinic/SelectClinic';
 
 
 const Stack = createNativeStackNavigator();
@@ -43,6 +44,7 @@ export default function App() {
         <Stack.Screen name='ViewPrescription' component={ViewPrescription} options={{ title: 'Medico - Visualiar Prescrição', headerShown: false }} />
         <Stack.Screen name='ConsultationLocal' component={ConsultationLocal} options={{ title: 'Medico - Local da Consulta', headerShown: false }} />
         <Stack.Screen name='SelectDoctor' component={SelectDoctor} options={{ title: 'Selecionar Médico', headerShown: false }} />
+        <Stack.Screen name='SelectClinic' component={SelectClinic} options={{ title: 'Selecionar Clínica', headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

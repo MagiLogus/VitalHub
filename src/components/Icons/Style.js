@@ -4,6 +4,7 @@ import Alert from "../../assets/images/alert_icon.svg";
 import Medical from "../../assets/images/medical_icon.svg";
 import Attention from "../../assets/images/attention_icon.svg";
 import Camera from "../../assets/images/camera_plus_icon.svg";
+import Staryellow from "../../assets/images/ph_star-fill.svg";
 
 
 export const GoogleIcon = styled(Google)`
@@ -28,4 +29,8 @@ height: 24px;
 export const CameraIcon = styled(Camera)`
 width: 24px;
 height: 24px;
+`
+export const Star = styled(Staryellow)`
+    width: 20px;
+    height: 20px;
 `

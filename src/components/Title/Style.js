@@ -85,3 +85,24 @@ export const ModalText = styled.Text`
 export const TitleScreen = styled(Title)`
   margin-top: 72px;
 `
+
+export const TextAge = styled.Text`
+    font-size: 14px ;
+    color: #8C8A97;
+    font-family: "Quicksand_400Regular";
+`
+export const TextBold = styled(TextAge)`
+    font-family: "Quicksand_600SemiBold";
+    `
+export const ProfileName = styled(Title)`   
+    font-size: 16px ;
+`
+export const NumberStar = styled.Text`
+    font-family: "Quicksand_600SemiBold";
+    font-size: 14px;
+    color: #F9A620;
+`
+
+export const Local = styled(NumberStar)`
+    color: #4E4B59;
+`
