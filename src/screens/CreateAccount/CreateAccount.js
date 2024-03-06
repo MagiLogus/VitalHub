@@ -6,7 +6,10 @@ import { LinkAction } from "../../components/Links/Style";
 import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, Subtitle, Title } from "../../components/Title/Style";
 
-export const CreateAccount = () => {
+export const CreateAccount = ({navigation}) => {
+    async function Login() {
+        navigation.replace("Login")
+    }
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -18,7 +21,7 @@ export const CreateAccount = () => {
             <Input placeholder="Usuário ou E-mail" />
             <Input placeholder="Senha" />
             <Input placeholder="Confirmar Senha" />
-            <Button width={"90%"}>
+            <Button width={"90%"} onPress={() => Login()}>
                 <ButtonTitle>Cadastrar</ButtonTitle>
             </Button>
             <LinkAction>Cancelar</LinkAction>

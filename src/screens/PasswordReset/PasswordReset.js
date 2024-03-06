@@ -5,7 +5,10 @@ import { Input } from "../../components/Input/Style";
 import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, Subtitle, Title } from "../../components/Title/Style";
 
-export const PasswordReset = () => {
+export const PasswordReset = ({ navigation }) => {
+    async function Login() {
+        navigation.replace("Login")
+    }
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -16,7 +19,7 @@ export const PasswordReset = () => {
             </ContentSubtitle>
             <Input placeholder="Nova Senha" />
             <Input placeholder="Confirmar Nova Senha" />
-            <Button width={"90%"}>
+            <Button width={"90%"} onPress={() => Login()}>
                 <ButtonTitle>Confirmar Nova Senha</ButtonTitle>
             </Button>
         </Container>

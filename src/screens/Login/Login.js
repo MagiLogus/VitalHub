@@ -8,7 +8,16 @@ import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, ButtonTitleGoogle, Title } from "../../components/Title/Style";
 import { ContentAccount, TextAccount } from "./Style";
 
-export const Login = () => {
+export const Login = ({ navigation }) => {
+    async function Login() {
+        navigation.replace("Main")
+    }
+    async function PasswordRecover() {
+        navigation.replace("PasswordRecover")
+    }
+    async function CreateAccount() {
+        navigation.replace("CreateAccount")
+    }
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -16,8 +25,8 @@ export const Login = () => {
             <Title>Entrar ou Criar Conta</Title>
             <Input placeholder="Usuário ou E-mail" />
             <Input placeholder="Senha" secureTextEntry />
-            <LinkMedium>Esqueceu sua senha?</LinkMedium>
-            <Button width="90%">
+            <LinkMedium onPress={() => PasswordRecover()}>Esqueceu sua senha?</LinkMedium>
+            <Button width="90%" onPress={() => Login()}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
             <ButtonGoogle width="90%">
@@ -25,7 +34,7 @@ export const Login = () => {
                 <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
             <ContentAccount>
-                <TextAccount>Não tem conta? <LinkBold>Crie uma conta agora!</LinkBold></TextAccount>
+                <TextAccount>Não tem conta? <LinkBold onPress={() => CreateAccount()}>Crie uma conta agora!</LinkBold></TextAccount>
             </ContentAccount>
         </Container>
     );

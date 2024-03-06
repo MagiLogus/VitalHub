@@ -6,7 +6,10 @@ import { LinkAction } from "../../components/Links/Style";
 import { Logo } from "../../components/Logo/Style";
 import { ButtonTitle, Subtitle, SubtitleFocus, Title } from "../../components/Title/Style";
 
-export const EmailVerification = () => {
+export const EmailVerification = ({ navigation }) => {
+    async function PasswordReset() {
+        navigation.replace("PasswordReset")
+    }
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -21,7 +24,7 @@ export const EmailVerification = () => {
                 <VerificationInput value={"0"} />
                 <VerificationInput value={"0"} />
             </InputContainer>
-            <Button width={"90%"}>
+            <Button width={"90%"} onPress={() => PasswordReset()}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
             <LinkAction>Reenviar Código</LinkAction>

@@ -16,6 +16,7 @@ import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescriptio
 import { ConsultationLocal } from './src/screens/ConsultationLocal/ConsultationLocal';
 import { SelectDoctor } from './src/screens/SelectDoctor/SelectDoctor';
 import { SelectClinic } from './src/screens/SelectClinic/SelectClinic';
+import { Main } from './src/screens/Main/Main';
 
 
 const Stack = createNativeStackNavigator();
@@ -31,7 +32,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator >
-        <Stack.Screen name='Navegacao' component={Navegation} options={{ title: 'Navegação' }} />
+        {/* <Stack.Screen name='Navegacao' component={Navegation} options={{ title: 'Navegação' }} /> */}
         <Stack.Screen name='Login' component={Login} options={{ title: 'Login', headerShown: false }} />
         <Stack.Screen name='PasswordRecover' component={PasswordRecover} options={{ title: 'Recuperar Senha', headerShown: false }} />
         <Stack.Screen name='PasswordReset' component={PasswordReset} options={{ title: 'Redefinir Senha', headerShown: false }} />
@@ -45,6 +46,7 @@ export default function App() {
         <Stack.Screen name='ConsultationLocal' component={ConsultationLocal} options={{ title: 'Medico - Local da Consulta', headerShown: false }} />
         <Stack.Screen name='SelectDoctor' component={SelectDoctor} options={{ title: 'Selecionar Médico', headerShown: false }} />
         <Stack.Screen name='SelectClinic' component={SelectClinic} options={{ title: 'Selecionar Clínica', headerShown: false }} />
+        <Stack.Screen name="Main" component={Main} options={{ title: 'Main', headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
