@@ -7,6 +7,12 @@ import { LinkAction } from "../../components/Links/Style";
 import { SelectClinicCard } from "../../components/SelectClinicCard/SelectClinicCard";
 
 export const SelectClinic = () => {
+    async function SelectDoctor() {
+        navigation.replace("SelectDoctor")
+    }
+    async function PacientAppointments() {
+        navigation.replace("PacientAppointments")
+    }
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -24,10 +30,10 @@ export const SelectClinic = () => {
                         <SelectClinicCard title={"Clínica Natureh"} numberStarYellow={"5,4"} local={"São Paulo, SP"} date={"Seg-Sex"} />
                         <SelectClinicCard title={"Clínica Natureh"} numberStarYellow={"5,4"} local={"São Paulo, SP"} date={"Seg-Sex"} />
                         <SelectClinicCard title={"Clínica Natureh"} numberStarYellow={"5,4"} local={"São Paulo, SP"} date={"Seg-Sex"} />
-                        <Button>
+                        <Button onPress={() => SelectDoctor()}>
                             <ButtonTitle>Continuar</ButtonTitle>
                         </Button>
-                        <LinkAction>Cancelar</LinkAction>
+                        <LinkAction onPress={() => PacientAppointments()}>Cancelar</LinkAction>
                     </CardContainer>
                 </ScrollView>
             </ScrollViewContainer>

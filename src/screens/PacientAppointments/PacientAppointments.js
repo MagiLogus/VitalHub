@@ -20,19 +20,22 @@ const Consultas = [
     { id: 7, nome: "Dr.Carlos", situacao: "cancelado" }
 ]
 
-export const PacientAppointments = () => {
+export const PacientAppointments = ({ navigation }) => {
     const [statusList, setStatusList] = useState("pendente")
     const [showModalCancel, setShowModalCancel] = useState(false);
+    async function UserProfile() {
+        navigation.replace("UserProfile")
+    }
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
-            <TopBar>
-                <TopBarContainer>
-                    <TopBarTitleContainer>
+            <TopBar >
+                <TopBarContainer >
+                    <TopBarTitleContainer >
                         <ImageTopBar source={require("../../assets/images/user_profile.png")} />
                         <TopBarImageContainer>
                             <Subtitle>Bem Vindo</Subtitle>
-                            <TitleTopBar>Richard Kosta</TitleTopBar>
+                            <TitleTopBar onPress={() => UserProfile()}>Richard Kosta</TitleTopBar>
                         </TopBarImageContainer>
                     </TopBarTitleContainer>
                     <AlertIcon />
