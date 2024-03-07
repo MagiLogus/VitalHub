@@ -51,8 +51,7 @@ export const Main = () => {
         name="PacientAppointments"
         component={ PacientAppointments }
       />
-
-
+      
       <BottomTab.Screen 
         name="UserProfile"
         component={ UserProfile}
