@@ -10,6 +10,8 @@ import { ListComponent } from "../../components/List/List";
 import { CancellationModal } from "../../components/CancellationModal/CancellationModal";
 import { AppointmentButton } from "../../components/Button/Style";
 import { ScheduleAppointmentModal } from "../../components/ScheduleAppointmentModal/ScheduleAppointmentModal";
+import * as Notifications from 'expo-notifications';
+
 
 const Consultas = [
     { id: 1, nome: "Dr.Carlos", situacao: "pendente" },
@@ -28,6 +30,27 @@ export const PacientAppointments = ({ navigation }) => {
     async function UserProfile() {
         navigation.replace("UserProfile")
     }
+
+    const handleCallNotifications = async () => {
+        const { status } = await Notifications.getPermissionsAsync();
+        if (status !== "granted") {
+            alert("Sem Permissão");
+            return;
+        }
+
+        await Notifications.scheduleNotificationAsync({
+            content: {
+                title: "Hello World!",
+                body: "Bem vindo ao mundo!"
+            },
+            trigger: {
+                seconds: 5
+            }
+        });
+
+
+    }
+
     return (
         <Container>
             <StatusBar translucent backgroundColor="transparent" />
@@ -65,6 +88,7 @@ export const PacientAppointments = ({ navigation }) => {
             <CancellationModal
                 visible={showModalCancel}
                 setShowModalCancel={setShowModalCancel}
+                handleCallNotifications={handleCallNotifications}
             />
             <ScheduleAppointmentModal visible={showModalSchedule} setshowModalSchedule={setshowModalSchedule} />
             <AppointmentButton onPressSchedule={() => setshowModalSchedule(true)}>
